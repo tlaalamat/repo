@@ -1,5 +1,32 @@
-  public class Cercle {
+public class Cercle {
+       
+        public static void main(String[] args) {
+        // TODO code application logic here
+       
+       Cercle c1 = new Cercle() ;
+       Cercle c2 = new Cercle(4,5) ;
+     
+    }
+       
+   
+       
 	 private float x;
+
+        public float getX() {
+            return x;
+        }
+
+        public void setX(float x) {
+            this.x = x;
+        }
+
+        public float getY() {
+            return y;
+        }
+
+        public void setY(float y) {
+            this.y = y;
+        }
 	 private float y; 
 
         
@@ -28,12 +55,18 @@
             this.x = x;
             this.y = y;
         }
+      Cercle() {
+            
+        }
    
     @Override
         public String toString() {
             return "Cercle{" + "x=" + x + ", y=" + y + '}';
         }
-
+        
+  
        
    
 }
+   
+   
